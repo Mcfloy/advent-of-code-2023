@@ -87,7 +87,6 @@ pub fn part1(path: &str) -> i32 {
                 debug!("{} {} {} {}", begin_x, end_x, number, add_number);
                 if add_number {
                     result += number.parse::<i32>().unwrap();
-                    number = String::from("");
                 }
                 x = end_x;
             } else {
@@ -167,9 +166,8 @@ pub fn part2(path: &str) -> i32 {
                 }
                 debug!("{} {} {} {}", begin_x, end_x, number, add_number);
                 if add_number {
-                    let mut gear = gears.entry(gear_position).or_insert(Vec::new());
+                    let gear = gears.entry(gear_position).or_insert(Vec::new());
                     gear.push(number.parse::<i32>().unwrap());
-                    number = String::from("");
                 }
                 x = end_x;
             } else {
