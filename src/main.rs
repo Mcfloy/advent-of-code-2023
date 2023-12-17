@@ -5,6 +5,8 @@ mod day4;
 mod day5;
 mod day6;
 mod day7;
+mod day8;
+mod day9;
 
 fn main() {
   dotenv::dotenv().ok();
@@ -29,7 +31,19 @@ fn main() {
   //
   // info!("Day 7 part 1 begin.");
   // info!("Day 7 part 1: {}", day7::part1("src/day7/input.txt"));
+  //
+  // info!("Day 7 part 2 begin.");
+  // info!("Day 7 part 2: {}", day7::part2("src/day7/input.txt"));
+  //
+  // info!("Day 8 part 1 begin.");
+  // info!("Day 8 part 1: {}", day8::part1("src/day8/input.txt"));
+  //
+  // info!("Day 8 part 2 begin.");
+  // info!("Day 8 part 2: {}", day8::part2("src/day8/input.txt"));
 
-  info!("Day 7 part 2 begin.");
-  info!("Day 7 part 2: {}", day7::part2("src/day7/input.txt"));
+  info!("Day 9 part 1 begin.");
+  info!("Day 9 part 1: {}", day9::part1("src/day9/input.txt"));
+
+  info!("Day 9 part 2 begin.");
+  info!("Day 9 part 2: {}", day9::part2("src/day9/input.txt"));
 }
